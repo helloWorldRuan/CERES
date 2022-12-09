@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" href="img/green_logo.ico" type="image/x-icon">
+    <script src="js/login.js"></script>
+    <title>CERES</title>
+</head>
+
+<body>
+
+    <div id="loader">
+        <div class="box">
+            <img src="./img/LOGO.png" alt="">
+        </div>
+    </div>
+
+    <section>
+        <div class="imgs">
+            <div class="ceres">
+                <a href="./index.html"><img src="./img/LOGO.png" alt="" id="logo"></a>
+                <img src="./img/WOMAN_ANALYSE.png" alt="" id="mulher">
+            </div>
+        </div>
+            <div class="form">
+                <h1>Bem-vindo de volta</h1>
+                <div class="campo">
+                    <label for="">Nome de usuário ou e-mail:</label>
+                    <input id="in_user" type="text" placeholder="ceres@seeddashboard.com">
+                </div>
+                <div class="campo">
+                    <label for="in_senha">Senha:</label>
+                    <input type="password" id="in_senha" placeholder="*******">
+                    <a href="">Esqueceu a senha?</a>
+                </div>
+                <button onclick="login()">Entrar</button>
+                <span>Ainda não é cadastrado? <a href="createAccount.html" class="registro">Registre-se</a></span>
+            </div>
+    </section>
+
+</body>
+
+</html>
+

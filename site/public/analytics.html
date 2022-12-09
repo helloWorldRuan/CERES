@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceres Board</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/analytics.css">
+    <link rel="shortcut icon" href="img/green_logo.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <img src="img/ceresBoard.png">
+            </div>
+            <div class="close" id="close-btn">
+                <span class="material-icons-sharp">
+                    close
+                </span>
+            </div>
+
+            <div class="sidebar">
+                <a href="dashboard.html" >
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a><a href="analytics.html" class="active">
+                    <span class="material-icons-sharp">
+                        insights
+                    </span>
+                    <h3>Analytics</h3>
+                </a>
+                </a><a id="logout" href="login.html">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Log Out</h3>
+                </a>
+            </div>
+        </aside>
+
+        <main>
+            <div class="kpi">
+                <h2>Temperatura</h2>
+                <div class="boxes">
+                    
+                    <div id="p1" class="box perigo" onmouseover="expand()" onmouseleave="resize()">
+                        <h1 id="pInfo">4°C</h1>
+                        <span>Crítico</span>
+                    </div>
+                    <div class="box atencao">
+                        
+                        <h1>9°C</h1>
+                        <span>Atenção</span>
+                    </div>
+                    <div class="box ideal">
+                        
+                        <h1>12°C</h1>
+                        <span>Ideal</span>
+                    </div>
+                    <div class="box atencao">
+                        
+                        <h1>16°C</h1>
+                        <span>Atenção</span>
+                    </div>
+                    <div class="box perigo">
+                        
+                        <h1>21°C</h1>
+                        <span>Crítico</span>
+                    </div>
+                </div>
+
+                <h2>Umidade</h2>
+                <div class="boxes">
+                    
+                    <div class="box perigo">
+                        
+                        <h1>9%</h1>
+                        <span>Crítico</span>
+                    </div>
+                    <div class="box atencao">
+                        
+                        <h1>14%</h1>
+                        <span>Atenção</span>
+                    </div>
+                    <div class="box ideal">
+                        
+                        <h1>17%</h1>
+                        <span>Ideal</span>
+                    </div>
+                    <div class="box atencao">
+                        
+                        <h1>20%</h1>
+                        <span>Atenção</span>
+                    </div>
+                    <div class="box perigo">
+                        
+                        <h1>25%</h1>
+                        <span>Crítico</span>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+</body>
+
+</html>

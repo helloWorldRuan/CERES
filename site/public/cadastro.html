@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/sign.css">
+    <link rel="shortcut icon" href="img/green_logo.ico" type="image/x-icon">
+
+    <style>
+        body{
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+    </style>
+
+    <script src="js/cadastro.js"></script>
+    <title>CERES</title>
+</head>
+
+<body>
+
+    <!--LOGO-->
+    <div class="logo">
+        <img onclick="home()" src="img/LOGO.png" alt="">
+    </div>
+
+    <!--FORMULÁRIO DE CADASTRO-->
+    <section>
+        <div class="form">
+            <br>
+            <h1>CADASTRO</h1>
+            <div class="campos">
+                <div class="campo">
+                    <label for="in_nome">Nome:</label>
+                    <input type="text" id="in_nome" placeholder="Nome">
+                </div>
+                <div class="campo">
+                    <label for="in_cnpj">CNPJ:</label>
+                    <input type="text" maxlength="14" id="in_cnpj" onkeydown="maskCNPJ()"
+                        placeholder="00.000.000/0000-00">
+                </div>
+                <div class="campo">
+                    <label for="in_telefone">Telefone:</label>
+                    <input type="tel" onkeydown="return maskTel(event)" id="in_telefone" placeholder="(99) 99999-9999">
+                </div>
+            </div>
+            <div class="campos">
+                <div class="campo">
+                    <label>Estado:</label>
+                    <select id="sel_estado" aria-placeholder="XX">
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="in_cidade">Cidade:</label>
+                    <input type="text" id="in_cidade" placeholder="Ceres City">
+                </div>
+                <div class="campo">
+                    <label for="in_cep">CEP:</label>
+                    <input type="text" maxlength="9" id="in_cep" onkeyup="maskCEP()" placeholder="XXXXX-XXX">
+                </div>
+                <div class="campo">
+                    <label for="in_complemento">Complemento:</label>
+                    <input type="text" id="in_complemento" placeholder="(opcional)">
+                </div>
+            </div>
+            <div class="campos">
+                <div class="campo">
+                    <label for="in_email">Email:</label>
+                    <input type="email" id="in_email" placeholder="ceres@seeddashboard.com" onkeydown="chkEmail()">
+                    <div id="errorE"></div>
+                </div>
+                <div class="campo">
+                    <label for="in_user">Username:</label>
+                    <input type="text" id="in_user" placeholder="ceres_seed">
+                </div>
+            </div>
+            <div class="campos">
+                <div class="campo">
+                    <label for="in_senha">Senha:</label>
+                    <input type="password" id="in_senha" placeholder="*******">
+                </div>
+                <div class="campo">
+                    <label for="in_conf_senha">Confirmar senha:</label>
+                    <input type="password" id="in_conf_senha" placeholder="*******" onkeyup="chkPass()">
+                    <div id="error"></div>
+                </div>
+            </div>
+
+            <button onclick="cadastrar()">Cadastrar</button>
+        </div>
+    </section>
+
+</body>
+
+</html>

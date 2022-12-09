@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estimate.css">
+    <link rel="shortcut icon" href="img/green_logo.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9729ff5aa8.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/estimate.js"></script>
+    <title>CERES</title>
+</head>
+
+<body id="body">
+    <div class="ceres">
+        <a href="index.html"><img id="logo" src="img/LOGO.png" alt=""></a>
+        <h1>ORÇAMENTO</h1>
+    </div>
+
+    <div class="container">
+        <div id="estimate" class="estimate">
+            <h1>Quantos armazéns você possui?</h1>
+            <div class="addOn">
+                <button onclick="addInput()" class="add" id="add">
+                    <i class="fa-solid fa-plus"></i>
+                    Adicionar armazém
+                </button>
+                <button onclick="refresh()" class="add refresh">
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                </button>
+                <button onclick="infoModal()" class="add info">?</button>
+            </div>
+            <!--
+                ** Adicionar na função addInput()
+                INPUTS: Tamanho, Sacas, Valor da saca
+                SELECT: Tipo de semente
+            -->
+
+            <!--INPUTs-->
+            <div id="field"></div>
+            <div id="insertButton"></div>
+
+        </div>
+    </div>
+
+    <div class="info-modal" onblur="hiddenModal()">
+        <h1>Como fazer seu orçamento?</h1>
+        <div class="infos">
+            <div class="info">
+                <p><b>Adicionar armazém -</b> Clique para adicionar seus armazéns</p>
+                <span>*Limitamos a apenas 3 armazéns para a simulação</span>
+            </div>
+            <div class="info">
+                <p><b>Valor saca -</b> Valor estimado pela Cebrae/Eqal</p>
+                <span>Café: 1000-1400 | Cacau: 650-900 | Araucária: 100-500</span>
+            </div>
+        </div>
+    </div>
+
+    <!--BOXES ORÇAMENTO-->
+    <section id="section">
+        <div id="boxes" class="boxes">
+            <div class="box">
+                <span class="title">sensores</span>
+                <h4 id="t_sensor" class="value"></h4>
+            </div>
+            <div class="box">
+                <span class="title">custo</span>
+                <h4 id="t_custo" class="value"></h4>
+            </div>
+            <div class="box">
+                <span class="title">sacas ganhas</span>
+                <h4 id="t_saca" class="value"></h4>
+            </div>
+            <div class="box">
+                <span class="title">economia</span>
+                <h4 id="t_economy" class="value"></h4>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
+
+<script>
+    ScrollReveal().reveal('#logo', {
+        duration: 1000,
+        distance: '200px',
+        opacity: 0
+    })
+</script>

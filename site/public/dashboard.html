@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceres Board</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="shortcut icon" href="img/green_logo.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/dash.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <img src="img/ceresBoard.png">
+            </div>
+            <div class="close" id="close-btn">
+                <span class="material-icons-sharp">
+                    close
+                </span>
+            </div>
+
+            <div class="sidebar">
+                <a href="dashboard.html" class="active">
+                    <span class="material-icons-sharp">dashboard</span>
+                    <h3>Dashboard</h3>
+                </a><a href="analytics.html">
+                    <span class="material-icons-sharp">insights</span>
+                    <h3>Analytics</h3>
+                </a>
+                </a><a id="logout" href="login.html">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Log Out</h3>
+                </a>
+            </div>
+        </aside>
+
+        <main>
+            
+            <div class="kpi">
+                <div class="boxes">
+                    <div class="box">
+                        <h2>Temperatura atual</h2>
+                        <h1 id="kpiTemp"></h1>
+                        <span id="statusTemp"></span>
+                    </div>
+                    <div class="box">
+                        <h2>Umidade atual</h2>
+                        <h1 id="kpiUmi"></h1>
+                        <span id="statusUmi">Dentro do ideal</span>
+                    </div>
+                    <div class="box">
+                        <h2>Temperatura máxima</h2>
+                        <h1 id="kpiTempMax">25ºC</h1>
+                        <span id="statusTempMax">Crítico</span>
+                    </div>
+                    <div class="box">
+                        <h2>Umidade máxima</h2>
+                        <h1 id="kpiUmiMax"></h1>
+                        <span id="statusUmiMax">Dentro do ideal</span>
+                    </div>
+                </div>
+            </div>
+            <div class="insights">
+                <div class="graph">
+                    <h1>Temperatura e Umidade</h1>
+                    <h2>Armazém 1</h2>
+                    <div>
+                        <canvas id="chartLine"></canvas>
+                    </div>
+                </div>
+
+                <div class="graph">
+                    <div>
+                        <h1>Quantidade de sacas por semente</h1>
+                        <h2>Armazém 1</h2>
+                        <canvas id="chartRadar"></canvas>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
+<script>
+
+    // const dataSaca = {
+    //     labels: [
+    //         'Café',
+    //         'Cacau',
+    //         'Araucária',
+    //     ],
+    //     datasets: [{
+    //         label: 'Sacas por armazém',
+    //         data: [],
+    //         backgroundColor: [
+    //             '#49ae39',
+    //             '#FFF0A6',
+    //             '#3991ae'
+    //         ]
+    //     }]
+    // };
+
+    // const configSaca = {
+    //     type: 'polarArea',
+    //     data: dataSaca,
+    //     options: {
+    //         plugins: {
+    //             legend: {
+    //                 display: true,
+    //                 labels: {
+    //                     color: '#fff'
+    //                 },
+    //             }
+    //         }
+    //     }
+    // }
+
+</script>
+
+<script>
+
+    // const barChart = new Chart(
+    //     document.getElementById('chartBar'),
+    //     config2
+    // );
+    
+//     const donutChart = new Chart(
+//         document.getElementById('chartDonut'),
+//         config4
+//     );
+// </script>

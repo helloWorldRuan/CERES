@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+
+
+::-webkit-scrollbar{
+    width: 10px;
+    transition: all .2s ease-in-out;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #1F2B20;
+}
+
+::-webkit-scrollbar-thumb{
+   background-color: #49ae39;
+ }
+
+*{
+    font-family: Roboto Slab;
+    scroll-behavior: smooth;
+    user-select: none;
+    transition: .1s linear;
+}
+
+
+body{
+    overflow: hidden;
+    font-family: Roboto Slab;
+    background-color: #1F2B20;
+    background-image: url("../img/logoBG.png");
+    background-repeat: no-repeat;
+    background-size: 600px;   
+}
+
+
+section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.account {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 50%;
+    padding: 5rem 0 10rem 3rem;
+    margin: 50px;
+}
+
+.account #logo{
+    width: 200px;
+    margin: 4rem 0;
+    position: relative;
+    bottom: 0;
+    transition: .2s ease;
+}
+
+a{
+    width: 0;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #FFF0A6;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    padding: .7rem;
+    transition: .1s linear;
+}
+
+
+h2{
+    font-weight: 300;
+    width: 50%;
+    color: #FFF9D9;
+    font-size: 20px;
+    padding: .7rem;
+}
+
+.button{
+    padding: .7rem 0;
+}
+
+button{
+    padding: .8rem;
+    background-color: #59A74D;
+    width: 35%;
+    color: black;
+    border-radius: 5px;
+    margin-left: .7rem;
+    margin-bottom: 1rem;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0 black;
+    font-size: 20px;
+}
+
+button:hover {
+    font-weight: 700;
+    background-color: #48c735;
+    cursor: pointer;
+}
+
+span{
+    color: #a4bf9f;
+    padding-left: .7rem;
+    font-weight: 300;
+}
+
+span a {
+    text-decoration: none;
+    color: #a4bf9f;
+}
+
+a:hover{
+    color: #FFF0A6;
+}
+.container {
+    width: 30%;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    height: 100vh;
+}
+
+.bg {
+    position: relative;
+    right: 40px;
+    background-color: #48c735;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 80%;
+    height: 80vh;
+    border-radius: 50px 0 0 0;
+}
+
+.bg img{
+    position: relative;
+    width: 700px;
+    right: 40px;
+    transition: .5s ease-out;
+}
+
+.bg img:hover{
+    right: 60px;
+}
+
+#logo:hover{
+    bottom: 5px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="shortcut icon" href="img/green_logo.ico" type="image/x-icon">
+    <title>CERES</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="account">
+            <a href="index.html"><img src="img/LOGO.png" alt="" id="logo"></a>
+            <h1>Novo por aqui?</h1>
+            <h2>Crie sua conta agora mesmo</h2>
+            <div class="button">
+                <button onclick="signProd()">Produtor autônomo</button>
+                <button onclick="signEnterprise()">Empresa</button>
+            </div>
+            <span class="login">Já tem uma conta? <a href="login.html">Faça login</a></span>
+        </div>
+
+        <div class="container">
+            <div class="bg">
+                <img src="img/plant.png" alt="" id="planta">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+<script>
+    var tipoClient =  ""
+
+    function signProd(){
+        tipoClient = localStorage.setItem('tipo', 1)
+        window.location.href = "cadastro.html"
+    }
+
+    function signEnterprise(){
+        tipoClient = localStorage.setItem('tipo', 2)
+        window.location.href = "cadastro.html"
+    }
+</script>

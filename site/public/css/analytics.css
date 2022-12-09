@@ -1,0 +1,28 @@
+main{
+    width: 1050px;
+}
+
+.kpi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.box{
+    width: 150px;
+}
+
+.boxes{
+    display: flex;
+    width: 90%;
+    height: 200px;
+    transition: .2s linear;
+}
+
+.kpi h2{
+    margin: 2rem 0 1rem 0;
+}
+

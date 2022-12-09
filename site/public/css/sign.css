@@ -1,0 +1,81 @@
+body{
+    text-align: center;
+}
+
+.logo{
+    margin: 4rem 0 3rem 0;
+}
+
+.logo img{
+    width: 150px;
+    position: relative;
+    bottom: 0;
+}
+
+.logo img:hover{
+    cursor: pointer;
+    bottom: 5px;
+}
+
+.form{
+    background-color: #BEDFB9;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 550px;
+    padding: 2rem 0;
+    width: 60%;
+    margin: 0;
+    
+}
+
+.form h1{
+    color: #1F2B20;
+    font-size: 25px;
+    margin-bottom: 2rem;
+}
+
+.campos{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+#in_complemento{
+    width: 90px;
+}
+
+#in_telefone{
+    width: 140px;
+}
+
+.campo{
+    margin: .5rem;
+}
+
+input{
+    padding: .8rem;
+    width: 85%;
+}
+
+button{
+    width: 50%;
+}
+
+#error{
+    position:absolute;
+    bottom: 1px;
+    font-size: 12px;
+    color: #ff5213;
+}
+
+#errorE{
+    position:absolute;
+    bottom: 6.6rem;
+    font-size: 12px;
+    color: #ff5213;
+}

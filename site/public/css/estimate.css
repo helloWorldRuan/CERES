@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap&family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+
+::-webkit-scrollbar{
+    width: 10px;
+    transition: all .2s ease-in-out;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #1F2B20;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #49ae39;
+}
+
+*{
+    scroll-behavior: smooth;
+    user-select: none;
+    transition: .1s linear;
+}
+
+
+body{
+    font-family: Oswald;
+    background-color: #1F2B20;
+    background-image: url("../img/logoBG.png");
+    background-repeat: no-repeat;
+    background-size: 850px;
+    
+}
+
+#section{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 90%;
+    margin: auto;
+    transition: .1s linear;
+}
+
+.ceres{
+    margin: 4rem auto;
+    width: 200px;
+    padding: 1.2rem .5rem;
+    border-radius: 5px;
+    background-color: #3b573d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ceres h1{
+    font-family: Roboto Slab;
+    color: #132511;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.ceres #logo{
+    margin-bottom: .8rem;
+    width: 150px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.estimate{
+    width: 63%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #3b573d;
+    font-family: Roboto Slab;
+    font-size: 30px;
+    font-weight: 700;
+    color: #49ae39;
+}
+
+.info-modal{
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    font-family: Roboto Slab;
+    position: absolute;
+    left: 70%;
+    bottom: 40%;
+    text-align: center;
+    background-color: #49ae39;
+    padding: 2rem 0;
+    width: 27%;
+    height: 0;
+    border-radius: 5px;
+    transition: .2s ease;
+}
+
+
+
+.info-modal h1{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.info-modal .infos{
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.infos .info{
+    text-align: start;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: .5rem;
+    height: 50px;
+}
+
+
+.info p{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.info p b{
+    font-weight: 700;
+}
+
+.info span{
+    font-size: 12px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+button {
+    font-family: Roboto Slab;
+    margin: auto;
+    padding: .8rem;
+    background-color: #61B954;
+    width: 200px;
+    margin: 2rem 0 0 0;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0 black;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: .1s ease;
+}
+
+button:hover{
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #49ae39;
+}
+
+.addOn{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.add{
+    font-size: 15px;
+    background-color: #3b573d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    outline: 0;
+    width: 200px;
+    margin-bottom: 4rem;
+    color: #49ae39;
+    border: 1px solid  #49ae39;
+    box-shadow: 0 0 0 0 ;
+}
+
+.add:hover{
+    color: rgb(197, 255, 204);
+    background-color: #2f4831;
+}
+
+a{
+    text-decoration: none;
+}
+
+.refresh{
+    width: 40px;
+    height: 40px;
+}
+
+.info{
+    width: 40px;
+    height: 40px;
+}
+
+#field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-campo{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campo{
+    max-height: 20vh;
+    display: flex;
+    justify-content: center;
+    margin: .1rem;
+    width: 20%;
+}
+
+.campo label{
+    color: #99ff89;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+input, select{
+    color: #e4ffe0;
+    background-color: #4c6c4e;
+    width: 150px;
+    font-family: Roboto Slab;
+    padding: .8rem;
+    margin: .5rem;
+    border-radius: 2px;
+    border: none;
+    outline: 0px solid #49ae3900;
+    transition: .1s ease;
+}
+
+input{
+    text-align: center;
+    width: 40%;
+}
+
+input::placeholder{
+    color: #abbba8;
+}
+
+input:focus, select:focus{
+    outline: 1px solid #49ae39;
+}
+
+.boxes{
+    width: 0%;
+    background-color: #3b573d;
+    padding: 2rem;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: .5s ease-in-out;
+}
+
+.box{
+    background-color: #49ae39;
+    padding: 2rem 1rem;
+    min-width: 110px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    height: 80px;
+    transition: all .2s linear;
+}
+
+.box .title{
+    color: #1F2B20;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.box .value{
+    font-size: 40px;
+    font-weight: 700;
+    color: #1F2B20;
+    transition: .1s linear;
+}
+
+.box:hover{
+    bottom: 5px;
+    background-color: #5cbd4d;
+}
+
+.box:hover .value{
+    color: #111c12;
+}
+
+
+
+

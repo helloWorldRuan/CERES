@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+
+
+::-webkit-scrollbar{
+    width: 10px;
+    transition: all .2s ease-in-out;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #1F2B20;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #49ae39;
+}
+
+*{
+    font-family: Roboto Slab;
+    scroll-behavior: smooth;
+    user-select: none;
+    transition: .1s linear;
+}
+
+
+body{
+    font-family: Roboto Slab;
+    background-color: #1F2B20;
+    background-image: url("../img/logoBG.png");
+    background-repeat: no-repeat;
+    background-size: 600px;
+    overflow: hidden;
+    
+}
+
+#loader{
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+}
+
+#loader .box{
+    background-color: #171f17;
+    opacity: 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 5vw;
+    height: 2vh;
+    transition: 1s ease;
+}
+
+#loader .box img{
+    width: 150px;
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+}
+
+.imgs {
+    width: 60%;
+}
+
+.ceres{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+    padding-left: 4rem;
+}
+
+.ceres #logo{
+    position: relative;
+    bottom: 0;
+    width: 200px;
+}
+
+.ceres #logo:hover{
+    bottom: 5px;
+}
+
+.ceres a{
+    width: 30%;
+    margin: 4rem;
+}
+
+.ceres #mulher{
+    position: relative;
+    width: 600px;
+    left: 0;
+    transition: .5s ease;
+    
+}
+
+.ceres #mulher:hover{
+    left: 10px;
+}
+
+.form {
+    background: #BEDFB9;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 50px 2px 50px 2px;
+    padding: 2rem 0 2rem 0;
+    margin-right: 4rem;
+    height: 450px;
+    text-align: left;
+}
+
+.form h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #1F2B20;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    width: 80%;
+    margin: .5rem 0;
+}
+
+
+label{
+    color:#085007;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: .5rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+input, select{
+    background-color: #d1f8cb;
+    padding: .8rem;
+    border-radius: 5px;
+    border: none;
+    width: 90%;
+    margin-bottom: 1rem;
+    outline: 0px solid rgba(255, 255, 255, 0);
+    transition: .2s ease;
+}
+
+input:focus{
+    outline: 1px solid #49ae39;
+}
+
+a{
+    text-decoration: none;
+    color: #59A74D;
+}
+
+a:hover{
+    color: #76cc68;
+    
+}
+
+button {
+    padding: .8rem;
+    background-color: #61B954;
+    width: 80%;
+    margin: 2rem 0;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0 black;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+button:hover{
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #49ae39;
+}
